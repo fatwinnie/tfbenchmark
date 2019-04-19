@@ -21,4 +21,4 @@ docker run --runtime=nvidia -it --rm dqa4/nbody:[cuda_version] ./nbody -benchmar
 ### FAQ
 **Q:** Premission denied when docker build, docker run?
 
-**A:** Add sudo before docker e.g. sudo docker buil or change your user as docker administrator by using ```sudo usermod -aG docker $USER```
+**A:** Add sudo before docker e.g. ```sudo docker build``` or change your user as docker administrator by using ```sudo usermod -aG docker $USER```
