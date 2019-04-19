@@ -5,7 +5,7 @@ Running tensorflow benchmark and nbody with docker
 
 ### Build a nbody image based on nvidia/cudagl:tag
 ```
-wget http://114.35.1.159/nbody/Dockerfile
+wget https://raw.githubusercontent.com/hao3924/tfbenchmark/nbody-docker/Dockerfile
 docker build -t dqa4/nbody:[cuda_version] [PATH of Dockerfile]
 ```
 ### Run nbody benchmark
