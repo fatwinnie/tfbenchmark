@@ -7,10 +7,12 @@ Running tensorflow benchmark and nbody with docker
 ```
 wget https://raw.githubusercontent.com/hao3924/tfbenchmark/nbody-docker/Dockerfile
 docker build -t dqa4/nbody:[cuda_version] [PATH of Dockerfile]
+#e.g.  docker build -t dqa4/nbody:cuda-10.1 .
 ```
 ### Run nbody benchmark
 ```
 nvidia-docker run -it --rm dqa4/nbody:[cuda_version] ./nbody -benchmark
+#e.g.  nvidia-docker run -it --rm dqa4/nbody:cuda-10.1 ./nbody -benchmark
 ```
 or
 ```
